@@ -1,0 +1,183 @@
+        th,
+        td {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black;
+        }
+
+        .center {
+            margin: 8px;
+        }
+
+        table {
+            width: 98%;
+            border-collapse: collapse;
+        }
+
+        .empclass {
+            border: 1px solid rgb(49, 49, 252);
+            font-size: 10px;
+            font: 1em sans-serif;
+        }
+
+        .basicClass {
+            border: 1px solid rgb(49, 49, 252);
+            font: 1em sans-serif;
+            font-size: 15px;
+            overflow-x: auto;
+            overflow-y: auto;
+            overflow: auto;
+        }
+
+        .advanceClass {
+            border: 1px solid rgb(49, 49, 252);
+            overflow-x: auto;
+            overflow-y: auto;
+            overflow: auto;
+        }
+
+
+        button {
+            background-color: rgb(236, 240, 230);
+            border-radius: 2%;
+        }
+
+        .submitbutton {
+            background-color: rgb(26, 79, 192);
+            border-radius: 5%;
+            margin-left: -32%;
+            color: white;
+        }
+
+        .addempClass {
+            background-color: rgb(26, 79, 192);
+            text-align: left;
+            padding: 5px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 15px;
+        }
+
+        .inputClass {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .titleCol {
+            text-align: right;
+            flex: 25%;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            flex-wrap: wrap;
+        }
+
+        .inputCol {
+            margin: 00 2%;
+            flex: 65%;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            flex-wrap: wrap;
+        }
+
+        .hobboiescolumn {
+            margin: 00 2%;
+            flex: 65%;
+            display: grid;
+            justify-content: left;
+            font-size: 18px;
+            flex-wrap: wrap;
+        }
+
+        .gendercolumn {
+            margin: 00 2%;
+            flex: 65%;
+            display: flex;
+            font-size: 18px;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .titleCol,
+            .inputCol {
+                margin: 0;
+                flex: 50%;
+            }
+
+            .hobboiescolumn {
+                margin: 00 2%;
+                flex: 30%;
+                display: grid;
+                justify-content: left;
+                font-size: 18px;
+                flex-wrap: wrap;
+            }
+
+            .gendercolumn {
+                margin: 00 2%;
+                flex: 30%;
+                display: flex;
+                font-size: 18px;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .empclass,
+            .basicClass,
+            .advanceClass {
+                margin: 00px 15%;
+            }
+
+            .hobboiescolumn {
+                margin: 00 2%;
+                flex: 40%;
+                display: grid;
+                justify-content: left;
+                font-size: 18px;
+                flex-wrap: wrap;
+
+            }
+
+            .gendercolumn {
+                margin: 00 2%;
+                flex: 40%;
+                display: flex;
+                font-size: 18px;
+                flex-wrap: wrap;
+
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+            .empclass,
+            .basicClass,
+            .advanceClass {
+                margin: 00px 30%;
+            }
+        }

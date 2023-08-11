@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Crud</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body onload="appendEmployee()">
+    <div style="text-align: center;">
+        <div> <label for="Employee"> Employee</label><br>
+            <div class="empclass">
+                <div class="addempClass">
+                    Add Employee
+                </div>
+                <form id="loginForm" onsubmit="event.preventDefault();onFormSubmit();">
+                    <div>
+                        <div class="inputClass">
+                            <div class="titleCol"> <label for="name">Name:</label> </div>
+                            <div class="inputCol"><input type="text" placeholder="Enter Name" minlength="4"
+                                    maxlength="20" id="name" required /></div>
+                        </div>
+
+                        <div id="gender" class="inputClass">
+                            <div class="titleCol"> <label for="gender">Gender: </label> </div>
+                            <div class="gendercolumn">
+                                <div>
+                                    <label for="Male">Male</label> <input type="radio" value="Male" name="gender"
+                                        id="male" checked>
+                                </div>
+                                <div>
+                                    <label for="FeMale">Female</label> <input type="radio" value="Female" name="gender"
+                                        id="female">
+                                </div>
+                            </div>
+                            <br><br>
+                        </div>
+
+                        <div class="inputClass">
+                            <div class="titleCol"> <label for="gender">Date Of Birth: </label></div>
+                            <div class="inputCol"><input type="date" max="2023-08-08" required id="dob"></div>
+                        </div>
+
+                        <div class="inputClass">
+                            <div class="titleCol"> <label for="gender">Email: </label></div>
+                            <div class="inputCol"> <input type="email" placeholder="Enter Email" required id="email">
+                            </div>
+                        </div>
+
+                        <div class="inputClass">
+                            <div class="titleCol"> <label for="gender">Phone: </label></div>
+                            <div class="inputCol"> <input type="tel" placeholder="Enter Phone" id="phone"
+                                    pattern="[1-9]{1}[0-9]{9}">
+                            </div>
+                        </div>
+
+                        <div id="hobbie" class="inputClass">
+                            <div class="titleCol"> <label for="gender">Hobbies: </label></div>
+                            <div class="hobboiescolumn">
+                                <div>
+                                    <label for="Cricket">Cricket</label> <input type="checkbox" value="cricket"
+                                        id="cricket" name="hobbie" checked>
+                                </div>
+                                <div>
+                                    <label for="chess">Chess</label> <input type="checkbox" name="hobbie" id="chess"
+                                        value="chess"><br>
+                                </div>
+                                <div>
+                                    <label for="music">Music</label> <input type="checkbox" name="hobbie" id="music"
+                                        value="Music">
+                                </div>
+                            </div>
+                            <br><br>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <input type="submit" class="submitbutton" value="submit">
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <div>
+            <label for="Basic"> Basic</label>
+            <br>
+            <div class="basicClass">
+                <div class="addempClass">
+                    Display
+                </div>
+                <div>
+                    <table id="empTable" class="center">
+                        <tr>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Dob</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Hobbie</th>
+                            <th>Action</th>
+                        </tr>
+                    </table>
+
+                </div><br>
+            </div>
+        </div>
+
+        <br>
+        <div>
+            <label for="Advance"> Advance</label>
+            <br>
+            <div class="advanceClass">
+                <div class="addempClass">
+                    Display
+                </div>
+                <div>
+                    <table id="empAdvanceTable" class="center">
+                        <tr id="nameRow">
+                            <th>Name</th>
+                        </tr>
+                        <tr id="genderRow">
+                            <th>Gender</th>
+                        </tr>
+                        <tr id="dobRow">
+                            <th>Dob</th>
+                        </tr>
+                        <tr id="emailRow">
+                            <th>Email</th>
+                        </tr>
+                        <tr id="phoneRow">
+                            <th>Phone</th>
+                        </tr>
+                        <tr id="hobbieRow">
+                            <th>Hobbie</th>
+                        </tr>
+                        <tr id="ActionRow">
+                            <th>action</th>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="Script.js"></script>
